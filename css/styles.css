@@ -17,6 +17,7 @@ html, body {
     height: 100px;
     /*Largura*/
     width: 100%;
+    padding: 20px;
 }
 
 .nav-main {
@@ -26,10 +27,41 @@ html, body {
     /*Macete para centralizar um div, header e etc.. dentro do outro 
     para funcionar tem que por a largura(width)*/
     margin: 0 auto;
-    border: 1px solid yellow;
+    display: flex;
+    /*Itens um do lado do outro por coluna (inverteu o eixo)
+    para alinhar os itens não funciona com o justify-content: center(horizontal)
+    tem que usar o align-items*/
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Toda tag a dentro da classe .nav-main*/
 .nav-main a {
     color: #fff;
+    /*Transformar para maiúscula*/
+    text-transform: uppercase;
+    /*Remover sublinhado*/
+    text-decoration: none;
+}
+
+.menu-itens {
+    /*Itens um do lado do outro*/
+    display: flex;
+    /*Romover (°) da lista*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-itens li {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.nav-brand {
+    font-size: 18px;
+    /*Negrito*/
+    font-weight: 700;
+    /*Margin abaixo*/
+    margin-bottom: 5px;
 }
