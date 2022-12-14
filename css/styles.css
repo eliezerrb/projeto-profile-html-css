@@ -81,8 +81,13 @@ html, body {
 
 .profile-title {
     margin: 35px 0 0 0;
+    /*rem unidade relativa refente a 
+    raiz(root element, raiz, elemento HTML)equivale a 32px
+    pois por padrão do HTML é 16px*/
+    font-size: 2rem;
 }
 
 .profile-description {
     margin: 0;
+    font-size: 1rem;
 }
