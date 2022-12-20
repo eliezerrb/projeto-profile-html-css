@@ -153,3 +153,12 @@ footer {
     height: 32px;
     margin: 10px;
 }
+
+/*Para a responsividade comportamento diferenciado a partir de um breakpoint*/
+@media(min-width: 576px) {
+
+   html {
+        font-size: 20px;
+   }
+
+}
