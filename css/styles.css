@@ -1,172 +1,189 @@
 /*ELEMENTS*/
 
 * {
-    /*Borda e padding será contato como área do elemento(desconta do meio)*/
-    box-sizing: border-box;
+  /*Borda e padding será contato como área do elemento(desconta do meio)*/
+  box-sizing: border-box;
 }
 
-html, body {
-    /*Margem interna*/
-    padding: 0;
-    /*Margem externa*/
-    margin: 0;
-    font-family: Montserrat, sans-serif;
+html,
+body {
+  /*Margem interna*/
+  padding: 0;
+  /*Margem externa*/
+  margin: 0;
+  font-family: Montserrat, sans-serif;
 }
 
 footer {
-    height: 120px;
-    background-color: #2C3E50;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 120px;
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*CLASSES, IDS*/
 
 .nav-container {
-    background-color: #2C3E50;
-    /*Altura*/
-    height: 100px;
-    /*Largura*/
-    width: 100%;
-    padding: 20px;
-    /*Fixar o menu ao descer a barra de rolagem*/
-    position: fixed;
+  background-color: #2c3e50;
+  /*Altura*/
+  height: 100px;
+  /*Largura*/
+  width: 100%;
+  padding: 20px;
+  /*Fixar o menu ao descer a barra de rolagem*/
+  position: fixed;
 }
 
 .nav-main {
-    width: 100%;
-    /*Largura não pode ser maior*/
-    max-width: 960px;
-    /*Macete para centralizar um div, header e etc.. dentro do outro 
+  width: 100%;
+  /*Largura não pode ser maior*/
+  max-width: 960px;
+  /*Macete para centralizar um div, header e etc.. dentro do outro 
     para funcionar tem que por a largura(width)*/
-    margin: 0 auto;
-    display: flex;
-    /*Itens um do lado do outro por coluna (inverteu o eixo)
+  margin: 0 auto;
+  display: flex;
+  /*Itens um do lado do outro por coluna (inverteu o eixo)
     para alinhar os itens não funciona com o justify-content: center(horizontal)
     tem que usar o align-items*/
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Toda tag a dentro da classe .nav-main*/
 .nav-main a {
-    color: #fff;
-    /*Transformar para maiúscula*/
-    text-transform: uppercase;
-    /*Remover sublinhado*/
-    text-decoration: none;
+  color: #fff;
+  /*Transformar para maiúscula*/
+  text-transform: uppercase;
+  /*Remover sublinhado*/
+  text-decoration: none;
 }
 
 .menu-itens {
-    /*Itens um do lado do outro*/
-    display: flex;
-    /*Romover (°) da lista*/
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  /*Itens um do lado do outro*/
+  display: flex;
+  /*Romover (°) da lista*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-itens li {
-    margin: 10px;
-    font-size: 14px;
+  margin: 10px;
+  font-size: 14px;
 }
 
 .nav-brand {
-    font-size: 18px;
-    /*Negrito*/
-    font-weight: 700;
-    /*Margin abaixo*/
-    margin-bottom: 5px;
+  font-size: 18px;
+  /*Negrito*/
+  font-weight: 700;
+  /*Margin abaixo*/
+  margin-bottom: 5px;
 }
 
 .profile-container {
-    background-color: #1ABC9C;
-    color: #fff;
-    padding: 160px 0 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 160px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.profile-avatar img{
-    width: 150px;
+.profile-avatar img {
+  width: 150px;
 }
 
 .profile-title {
-    margin: 35px 0 0 0;
-    /*rem unidade relativa refente a 
+  margin: 35px 0 0 0;
+  /*rem unidade relativa refente a 
     raiz(root element, raiz, elemento HTML)equivale a 32px
     pois por padrão do HTML é 16px*/
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .profile-description {
-    margin: 0;
-    font-size: 1rem;
+  margin: 0;
+  font-size: 1rem;
 }
 
 #portfolio {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-   
-
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .portfolio-title {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: #2C3E50;
-    margin: 60px 0 10px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2c3e50;
+  margin: 60px 0 10px 0;
 }
 
 .portfolio-container {
-    display: flex;
-    /*Alinhar ao centro*/
-    justify-content: center;
-    /*Quebrar a linha quando terminar a largura*/
-    flex-wrap: wrap;
+  display: flex;
+  /*Alinhar ao centro*/
+  justify-content: center;
+  /*Quebrar a linha quando terminar a largura*/
+  flex-wrap: wrap;
 }
 
-/**/
 .portfolio-item {
-    /*Imagem ir aumentando proporcionalmente a página*/
-    width: calc(100% - 40px);
-    max-width: 420px;
-    /*Arrendondar a borda da imagem*/    
-    border-radius: 10px;
-    /*Alterar o curdor para mão ao passar o mouse*/
-    cursor: pointer;
-    margin: 20px;
+  /*Imagem ir aumentando proporcionalmente a página*/
+  width: calc(100% - 40px);
+  max-width: 420px;
+  /*Arrendondar a borda da imagem*/
+  border-radius: 10px;
+  /*Alterar o curdor para mão ao passar o mouse*/
+  cursor: pointer;
+  margin: 20px;
 }
 
 .footer-title {
-    color: #fff;
-    font-size: 14px;
-    margin-top: 30px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 30px;
 }
 
 .social-container img {
-    width: 32px;
-    height: 32px;
-    margin: 10px;
+  width: 32px;
+  height: 32px;
+  margin: 10px;
 }
 
 /*Para a responsividade comportamento diferenciado a partir de um breakpoint*/
-@media(min-width: 576px) {
-
-   html {
-        font-size: 20px;
-   }
-
+@media (min-width: 576px) {
+  html {
+    font-size: 20px;
+  }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
 
-    html {
-         font-size: 24px;
-    }
- 
- }
+  .portfolio-item {
+    width: 280px;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
+  .nav-main {
+    flex-direction: row;
+    /*Espaço equilabrado entre os elementos e extremidades*/
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .menu-itens li {
+    font-size: 18px;
+  }
+}
