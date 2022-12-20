@@ -5,13 +5,17 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
   /*Margem interna*/
   padding: 0;
   /*Margem externa*/
   margin: 0;
   font-family: Montserrat, sans-serif;
+}
+
+html {
+  /* Macete para resolver o problema de cabeçalho de página fixo sobrepõe âncora*/
+  scroll-padding-top: 100px; /* 100px é a altura do cabeçalho fixado */
 }
 
 footer {
