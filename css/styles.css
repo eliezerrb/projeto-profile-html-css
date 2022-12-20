@@ -10,7 +10,7 @@ html, body {
     margin: 0;
     font-family: Montserrat, sans-serif;
 }
-/**/
+
 .nav-container {
     background-color: #2C3E50;
     /*Altura*/
@@ -90,4 +90,39 @@ html, body {
 .profile-description {
     margin: 0;
     font-size: 1rem;
+}
+
+#portfolio {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+   
+
+}
+
+.portfolio-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2C3E50;
+}
+
+.portfolio-container {
+    display: flex;
+    /*Alinhar ao centro*/
+    justify-content: center;
+    /*Quebrar a linha quando terminar a largura*/
+    flex-wrap: wrap;
+}
+
+/**/
+.portfolio-item {
+    /*Imagem ir aumentando proporcionalmente a página*/
+    width: calc(100% - 40px);
+    max-width: 420px;
+    /*Arrendondar a borda da imagem*/    
+    border-radius: 10px;
+    /*Alterar o curdor para mão ao passar o mouse*/
+    cursor: pointer;
+    margin: 20px;
 }
